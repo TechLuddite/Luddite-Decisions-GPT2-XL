@@ -1,0 +1,7 @@
+{
+ "format_version": 1,
+ "temperature": 1.75,
+ "letters": "ABCDEFGHIJ",
+ "base_model": "gpt2-xl",
+ "readout": "option_head: a small head scores each option from the hidden state at the end of its line and at 'Answer:', softmax over the options"
+}

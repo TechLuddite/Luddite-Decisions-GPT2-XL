@@ -1,0 +1,90 @@
+{
+ "model": "data/s1/runs/s1-gpt2-xl/full",
+ "adapter": null,
+ "quant": "bf16",
+ "temperature": 1.75,
+ "readout": "option_head",
+ "gpu_weights_gb": 3.13,
+ "sets": {
+  "eval_bench_v1": {
+   "n": 600,
+   "accuracy": 0.505,
+   "chance": 0.2444,
+   "nll": 1.0719,
+   "ece": 0.0354,
+   "mean_confidence": 0.4964,
+   "letter_consistency": 0.72,
+   "by_family": {
+    "count_seen": 0.2,
+    "cover": 0.24,
+    "exit_for_quest": 0.693,
+    "fits": 1.0,
+    "heal": 0.333,
+    "nearest_threat": 0.48,
+    "value_per_cell": 0.813,
+    "weapon": 0.28
+   }
+  },
+  "eval_synth_heldout": {
+   "n": 600,
+   "accuracy": 0.295,
+   "chance": 0.25,
+   "nll": 1.7944,
+   "ece": 0.171,
+   "mean_confidence": 0.4332,
+   "letter_consistency": 0.5417,
+   "by_family": {
+    "except_category": 0.33,
+    "multi_hop": 0.26
+   }
+  },
+  "eval_synth_indist": {
+   "n": 640,
+   "accuracy": 0.7125,
+   "chance": 0.2509,
+   "nll": 0.6864,
+   "ece": 0.0607,
+   "mean_confidence": 0.656,
+   "letter_consistency": 0.8141,
+   "by_family": {
+    "arithmetic": 0.425,
+    "category_rule": 0.8,
+    "compare_two": 1.0,
+    "count_condition": 0.325,
+    "direction": 1.0,
+    "extreme": 0.25,
+    "filtered_extreme": 0.3,
+    "fit_capacity": 1.0,
+    "intent": 1.0,
+    "list_difference": 1.0,
+    "lookup": 0.9,
+    "rank_position": 0.35,
+    "ratio_best": 0.9,
+    "rule_policy": 0.45,
+    "times": 0.8,
+    "yes_no": 0.9
+   }
+  },
+  "eval_csqa": {
+   "n": 1221,
+   "accuracy": 0.6069,
+   "chance": 0.2,
+   "nll": 0.9833,
+   "ece": 0.0423,
+   "mean_confidence": 0.6273,
+   "letter_consistency": 0.7887,
+   "by_family": {
+    "commonsense_qa": 0.607
+   }
+  },
+  "eval_mmlu": {
+   "n": 1425,
+   "accuracy": 0.3039,
+   "chance": 0.25,
+   "nll": 1.4688,
+   "ece": 0.1172,
+   "mean_confidence": 0.4211
+  }
+ },
+ "minutes": 1.5
+}
